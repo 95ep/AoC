@@ -30,6 +30,6 @@ def check_passwords_new_policy(password_list):
     return n_valid
 
 
-input = load_input('inputs/day2.txt')
+input = load_input('inputs/day02.txt')
 print(f"Number of valid passwords according to 1st policy {check_passwords(input)}")
 print(f"Number of valid passwords according to 2nd policy {check_passwords_new_policy(input)}")

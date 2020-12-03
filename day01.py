@@ -1,6 +1,6 @@
 import csv
 
-with open('inputs/day1.csv') as csvfile:
+with open('inputs/day01.csv') as csvfile:
     data_iter = csv.reader(csvfile, delimiter='\n')
     data = [int(entry[0]) for entry in data_iter]
 
