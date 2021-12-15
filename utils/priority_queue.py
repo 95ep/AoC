@@ -9,9 +9,6 @@ class PriorityQueue:
         self.REMOVED = "<removed-task>"  # placeholder for a removed task
         self.counter = itertools.count()  # unique sequence count
 
-    def __len__(self):
-        return len(self.pq)
-
     def add_with_priority(self, item, priority):
         """Add new item with priority"""
         if item in self.entry_finder:

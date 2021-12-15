@@ -47,7 +47,7 @@ def dijkstras(graph):
 
     target = len(graph) - 1
 
-    while len(queue) > 0:
+    while True:
         # Find node with lowest dist in queue
         next_node = queue.pop()
 
