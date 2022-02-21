@@ -34,7 +34,7 @@ class PriorityQueue:
     def pop(self):
         """Return item with lowest priority"""
         while self.pq:
-            priority, count, item = heappop(self.pq)
+            _, _, item = heappop(self.pq)
             if item is not self.REMOVED:
                 del self.entry_finder[item]
                 return item
