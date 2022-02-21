@@ -21,7 +21,8 @@ def reader_split_by_exp(path, exp):
                 sub_list = []
 
             else:
-                sub_list.append(line.rstrip())
+                if line.rstrip():
+                    sub_list.append(line.rstrip())
 
     input.append(sub_list)
 
