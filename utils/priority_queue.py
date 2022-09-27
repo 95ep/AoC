@@ -1,4 +1,4 @@
-from heapq import heapify, heappop, heappush
+from heapq import heappop, heappush
 import itertools
 
 
@@ -8,6 +8,10 @@ class PriorityQueue:
         self.entry_finder = {}  # mapping of item to entries
         self.REMOVED = "<removed-task>"  # placeholder for a removed task
         self.counter = itertools.count()  # unique sequence count
+
+    def is_in_queue(self, item):
+        """Check if item is in queue"""
+        return item in self.entry_finder
 
     def add_with_priority(self, item, priority):
         """Add new item with priority"""
@@ -39,4 +43,4 @@ class PriorityQueue:
                 del self.entry_finder[item]
                 return item
 
-        raise KeyError("Attepting to pop from empty queue!")
+        raise KeyError("Attempting to pop from empty queue!")
