@@ -1,7 +1,5 @@
 from utils.readers import reader_split_by_line
 
-MOVE_SCORE = {"X": 1, "Y": 2, "Z": 3}
-
 
 def determine_outcome(move_1, move_2):
     if move_1 == move_2:
