@@ -43,4 +43,4 @@ class PriorityQueue:
                 del self.entry_finder[item]
                 return item
 
-        raise KeyError("Attempting to pop from empty queue!")
+        return None
